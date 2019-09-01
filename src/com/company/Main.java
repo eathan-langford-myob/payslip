@@ -1,8 +1,6 @@
 package com.company;
 
-import java.net.PasswordAuthentication;
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
+
 import java.util.Arrays;
 
 import static java.time.temporal.ChronoUnit.DAYS;
@@ -48,7 +46,6 @@ public class Main {
             validateMonth(User);
             Payslip generatedPayslip = new Payslip();
         generatedPayslip.constructPayslip(User);
-//        System.out.println(ChronoUnit.MONTHS.between(User.getStartDate(), User.getEndDate()));
         System.out.println(generatedPayslip.toString());
 
 
